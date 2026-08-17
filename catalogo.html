@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo | PLOT</title>
+<!-- ES PARA LOS ICONOS DE LAS REDES SOCIALES -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="container nav-container">
+    <a href="index.html" class="logo">PLOT</a>
+
+    <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#" class="filter-btn active" data-filter="all">Todos</a></li>
+        <li>
+          <details class="category-dropdown">
+            <summary>Categorías</summary>
+            <ul>
+              <li><a href="#" class="filter-btn" data-filter="fantasia">Fantasía</a></li>
+              <li><a href="#" class="filter-btn" data-filter="romance">Romance</a></li>
+              <li><a href="#" class="filter-btn" data-filter="desarrollo">Desarrollo</a></li>
+              <li><a href="#" class="filter-btn" data-filter="ficcion">Ficción</a></li>
+              <li><a href="#" class="filter-btn" data-filter="terror">Terror</a></li>
+              <li><a href="#" class="filter-btn" data-filter="thriller">Thriller</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </nav>
+
+    <button class="cart-toggle" aria-label="Abrir carrito de compras">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count">0</span>
+    </button>
+  </div>
+</header>
+
+<h2 class="section-title">Nuestro catálogo</h2>
+
+<!-- CATALOGO -->
+<section class="catalog">
+<div class="container">
+
+<div class="book-grid">
+
+<article class="book-card fantasia" data-categoria="fantasia">
+<img src="images/books/book1.jpg">
+<h3>El Nombre del Viento</h3>
+<p>Patrick Rothfuss</p>
+<span>Fantasía</span>
+<h4>$24.999</h4>
+<button>comprar</button>
+</article>
+
+<article class="book-card romance" data-categoria="romance">
+<img src="images/books/book2.jpg">
+<h3>Orgullo y Prejuicio</h3>
+<p>Jane Austen</p>
+<span>Romance</span>
+<h4>$18.500</h4>
+<button>comprar</button>
+</article>
+
+<article class="book-card ficcion" data-categoria="ficcion">
+<img src="images/books/book3.jpg">
+<h3>1984</h3>
+<p>George Orwell</p>
+<span>Ficción</span>
+<h4>$20.000</h4>
+<button>comprar</button>
+</article>
+
+<article class="book-card ficcion" data-categoria="ficcion">
+<img src="images/books/book4.jpg">
+<h3>Sherlock Holmes</h3>
+<p>Arthur Conan Doyle</p>
+<span>Ficción</span>
+<h4>$22.500</h4>
+<button>comprar</button>
+</article>
+
+<article class="book-card ficcion" data-categoria="ficcion">
+<img src="images/books/book5.jfif">
+<h3>Twisted Love</h3>
+<p>Ana Huang</p>
+<span>Ficción</span>
+<h4>$23.800</h4>
+<button>comprar</button>
+</article>
+
+<article class="book-card desarrollo" data-categoria="desarrollo">
+<img src="images/books/book6.png">
+<h3>Encuentro</h3>
+<p>Rolon</p>
+<span>Desarrollo Personal</span>
+<h4>$20.900</h4>
+<button>comprar</button>
+</article>
+
+<article class="book-card romance" data-categoria="romance">
+<img src="images/books/book7.jfif">
+<h3>Silence</h3>
+<p>Flor Salvador</p>
+<span>Romance</span>
+<h4>$25.900</h4>
+<button>comprar</button>
+</article>
+
+<article class="book-card romance" data-categoria="romance">
+<img src="images/books/book8.jfif">
+<h3>Quedará el amor</h3>
+<p>Alice Kellen</p>
+<span>Romance</span>
+<h4>$35.800</h4>
+<button>comprar</button>
+</article>
+
+<article class="book-card fantasia" data-categoria="fantasia">
+<img src="images/books/book9.jfif">
+<h3>Etéreo</h3>
+<p>Joana Marcus</p>
+<span>Fantasía</span>
+<h4>$29.400</h4>
+<button>comprar</button>
+</article>
+
+<article class="book-card desarrollo" data-categoria="desarrollo">
+<img src="images/books/book_10.jfif">
+<h3>El monje que vendió su ferrari</h3>
+<p>Robin Sharma</p>
+<span>Desarrollo Personal</span>
+<h4>$20.900</h4>
+<button>comprar</button>
+</article>
+
+<article class="book-card terror" data-categoria="terror">
+<img src="images/books/book_11.jfif">
+<h3>Los peligros de fumar en la cama</h3>
+<p>Mariana Enriquez</p>
+<span>Terror</span>
+<h4>$22.300</h4>
+<button>comprar</button>
+</article>
+
+<article class="book-card terror" data-categoria="terror">
+<img src="images/books/book_12.jfif">
+<h3>Un lugar soleado para gente sombria</h3>
+<p>Mariana Enriquez</p>
+<span>Terror</span>
+<h4>$27.200</h4>
+<button>comprar</button>
+</article>
+
+<article class="book-card desarrollo" data-categoria="desarrollo">
+<img src="images/books/book_13.jfif">
+<h3>Habitos Atomicos</h3>
+<p>James Clear</p>
+<span>Desarrollo Personal</span>
+<h4>$27.700</h4>
+<button>comprar</button>
+</article>
+
+<article class="book-card desarrollo" data-categoria="desarrollo">
+<img src="images/books/book_14.jfif">
+<h3>El poder del ahora</h3>
+<p>Eckhart Tolle</p>
+<span>Desarrollo Personal</span>
+<h4>$21.700</h4>
+<button>comprar</button>
+</article>
+
+<article class="book-card romance" data-categoria="romance">
+<img src="images/books/book_15.jfif">
+<h3>Fabricante de lagrimas</h3>
+<p>Erin Doom</p>
+<span>Romance</span>
+<h4>$37.200</h4>
+<button>comprar</button>
+</article>
+
+<article class="book-card fantasia" data-categoria="fantasia">
+<img src="images/books/book_16.jfif">
+<h3>Alas de sangre</h3>
+<p>Rebecca Yarros</p>
+<span>Fantasía</span>
+<h4>$38.080</h4>
+<button>comprar</button>
+</article>
+
+<article class="book-card ficcion" data-categoria="ficcion">
+<img src="images/books/book_17.jfif">
+<h3>El buen mal</h3>
+<p>Samanta Schweblin</p>
+<span>Ficción</span>
+<h4>$25.080</h4>
+<button>comprar</button>
+</article>
+
+<article class="book-card ficcion" data-categoria="ficcion">
+<img src="images/books/book_18.jfif">
+<h3>Sigue lloviendo</h3>
+<p>Alice Kellen</p>
+<span>Ficción</span>
+<h4>$29.000</h4>
+<button>comprar</button>
+</article>
+
+<article class="book-card thriller" data-categoria="thriller">
+<img src="images/books/book_19.jfif">
+<h3>La asistenta te vigila</h3>
+<p>Freida Mcfadden</p>
+<span>Thriller</span>
+<h4>$35.000</h4>
+<button>comprar</button>
+</article>
+
+<article class="book-card thriller" data-categoria="thriller">
+<img src="images/books/book_20.jfif">
+<h3>El recluso</h3>
+<p>Freida Mcfadden</p>
+<span>Thriller</span>
+<h4>$33.800</h4>
+<button>comprar</button>
+</article>
+
+
+</div>
+
+</div>
+</section>
+
+    <footer>
+        <div class="container">
+
+            <h2>PLOT</h2>
+
+            <p>
+                © 2026 PLOT - Todos los derechos reservados
+            </p>
+
+                <!-- Redes sociales -->
+                <div class="social-links">
+                <a href="https://www.instagram.com/plot.libros/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://www.facebook.com/tu_pagina" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.tiktok.com/@plot.libros?lang=en" target="_blank" rel="noopener noreferrer" class="social-icon tiktok" aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+
+                <a href="https://listado.mercadolibre.com.ar/pagina/mz20260127202138/#component=menu_corridors&tracking_id=77a5ac54-7f8c-451b-b16d-e55846850fa1&label=Todos+los+productos&global_position=1" target="_blank" rel="noopener noreferrer" class="social-icon mercadolibre" aria-label="Mercado Libre">
+                <img src="images/ML.webp" alt="Mercado Libre" style="width: 24px; height: 24px;">
+                </a>
+                </div>
+
+        </div>
+    </footer>
+
+    <!-- CARRITO -->
+    <div class="cart-overlay"></div>
+    <aside class="cart-panel">
+        <div class="cart-panel-header">
+            <h3>Tu carrito</h3>
+            <button class="close-cart" aria-label="Cerrar carrito">&times;</button>
+        </div>
+
+        <ul class="cart-items"></ul>
+
+        <div class="cart-panel-footer">
+            <p class="cart-total-row">Total: <span class="cart-total">$0</span></p>
+            <button class="checkout-btn">Finalizar compra</button>
+        </div>
+    </aside>
+
+<script src="js/carrito.js"></script>
+<script>
+    (function(){
+        const hamburgers = document.querySelectorAll('.hamburger');
+        hamburgers.forEach(btn => {
+            const nav = btn.closest('.nav-container').querySelector('.nav-menu');
+
+            const setOpen = (open) => {
+                if(open){
+                    nav.classList.add('open');
+                    btn.setAttribute('aria-expanded','true');
+                } else {
+                    nav.classList.remove('open');
+                    btn.setAttribute('aria-expanded','false');
+                }
+            };
+
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const isOpen = !nav.classList.contains('open');
+                setOpen(isOpen);
+            });
+
+            nav.querySelectorAll('a, summary').forEach(el => {
+                el.addEventListener('click', () => setOpen(false));
+            });
+
+            document.addEventListener('click', (e) => {
+                if(!btn.contains(e.target) && !nav.contains(e.target) && nav.classList.contains('open')){
+                    setOpen(false);
+                }
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if(e.key === 'Escape' && nav.classList.contains('open')){
+                    setOpen(false);
+                    btn.focus();
+                }
+            });
+        });
+    })();
+</script>
+</body>
+</html>
